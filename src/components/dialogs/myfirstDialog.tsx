@@ -6,13 +6,11 @@ export interface DialogPublicProps {
   isOpened: boolean;
   onClose: () => void;
 }
-export interface DialogName {
-   static
-}
+
 interface MyfirstDialogProps extends DialogPublicProps{
   text:string
 }
-export class MyfirstDialog extends React.Component<MyfirstDialogProps, any> implements DialogName{
+export class MyfirstDialog extends React.Component<MyfirstDialogProps, any> {
   static _name = 'MyfirstDialog';
   render () {
 
